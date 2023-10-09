@@ -1,0 +1,57 @@
+@import 'Styles/variaveis';
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titulo {
+    background: $text-gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: $fonte-titulos;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.underline {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: $sombra-linkedin;
+    animation: blink 1s infinite;
+    font-weight: 600;
+}
+
+@media screen and (min-width: $min-width-desktop){
+
+}
+
+@media screen and (min-width: $min-width-tablet){
+
+    .titulo {
+        font-size: 2.2em;
+    }
+    .underline {
+        font-size: 2.2em;
+    }
+
+}
+
+@media screen and (max-width: $min-width-tablet){
+
+    .titulo {
+        font-size: 1.4em;
+        align-self: center;
+    }
+    .underline {
+        font-size: 1.4em;
+        align-self: center;
+    }
+
+}

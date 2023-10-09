@@ -1,0 +1,109 @@
+@import 'Styles/variaveis';
+
+.botao {
+    background: $text-gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    font-family: $fonte-menu;
+    margin:0 auto;
+    border: none;
+    outline: none;
+    color: $sombra-ciano;
+    font-weight: bold;
+    height: 3em;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        border-width: 2px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-style: solid;
+        border-image: $text-gradient 1;
+        position: absolute;
+        align-self: flex-end;
+        width: 0%;
+        transition: 300ms;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::after {
+            width: 100%;
+        }
+
+        svg {
+            transform: translateX(10px);
+        }
+
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    svg {
+        transition: all 300ms;
+        font-size: 1.6em;
+    }
+}
+
+.botao_voltar {
+    position: relative;
+    padding: 0;
+
+    &::after {   
+        right: 0;
+    }
+
+    &:hover::after {
+        content: '';
+        width: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        svg {
+            transform: translateX(-10px);
+        }
+
+    }
+}
+
+@media screen and (max-width: $min-width-desktop) {
+    .botao {
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $min-width-tablet) {
+    .botao {
+        align-self: center;
+        width: fit-content;
+        gap: 5px;
+
+        p {
+            font-size: 1.1em;
+        }
+
+        svg {
+            font-size: 1.3em;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+}

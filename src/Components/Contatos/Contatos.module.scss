@@ -1,0 +1,154 @@
+@import 'Styles/variaveis';
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: show-up 1s;
+    min-height: 90vh;
+    width: 80vw;
+    color: white;
+    padding: 3em;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 2em;
+    font-family: $fonte-menu;
+    
+    :nth-child(1) {
+        grid-column: span 2;
+    }
+
+    &_contatos {
+        grid-column: 1;
+        justify-self: right;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+
+        &_item {
+            display: flex;
+            gap: 0.5em;
+
+            svg {
+                font-size: 1.2em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            span {
+                margin-left: 0.3em;
+            }
+
+        }
+
+    }
+
+    :last-child {
+        grid-column: span 2;
+    }
+
+}
+
+@media screen and (min-width: $min-width-desktop){
+
+
+
+}
+
+@media screen and (min-width: $min-width-tablet) and (max-width: $min-width-desktop){
+
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+
+        &_contatos {
+            grid-column: 1;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+    
+            &_item {
+                display: flex;
+                gap: 0.5em;
+    
+                svg {
+                    font-size: 1em;
+                }
+    
+                h2 {
+                    font-size: 0.9em;
+                }
+    
+                span {
+                    margin-left: 0.3em;
+                }
+    
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width: $min-width-tablet){
+
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        gap: 2em;
+
+        :nth-child(1) {
+            grid-column: span 1;
+        }
+
+        &_contatos {
+            grid-column: 1;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+    
+            &_item {
+                display: flex;
+                gap: 0.5em;
+    
+                svg {
+                    font-size: 1em;
+                }
+    
+                h2 {
+                    font-size: 0.9em;
+                }
+    
+                span {
+                    margin-left: 0.3em;
+                }
+    
+            }
+    
+        }
+
+        :last-child {
+            grid-column: span 1;
+        }
+    }
+
+}

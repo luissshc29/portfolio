@@ -1,0 +1,58 @@
+@import 'Styles/variaveis';
+
+.container {
+    min-height: 90vh;
+    width: 80vw;
+    color: white;
+    padding: 3em;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 2em;
+
+    :nth-child(1) {
+        grid-column: span 2;
+    }
+
+    :last-child {
+        grid-column: span 2;
+    }
+
+}
+
+@media screen and (min-width: $min-width-desktop){
+
+
+
+}
+
+@media screen and (min-width: $min-width-tablet) and (max-width: $min-width-desktop){
+
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: $min-width-tablet){
+
+    
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        gap: 2em;
+
+        :nth-child(1) {
+            grid-column: span 1;
+        }
+       
+        :last-child {
+            grid-column: span 1;
+        }
+    }
+
+}
