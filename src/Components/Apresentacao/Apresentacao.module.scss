@@ -129,19 +129,23 @@
     .container {
         margin-bottom: 0;
     
-        &_tech {
-            
-            &_item {
-                
-                &:hover {
-                        
-                    p {
-                        display: block;
+        &_div {
+
+            &_tech {
+
+                &_item {
+                    
+                    &:hover {
+                            
+                        p {
+                            display: block;
+                        }
                     }
                 }
+        
             }
-    
         }
+        
     }
 }
 
@@ -184,10 +188,11 @@
             align-self: flex-start;
         }
 
-
         &_div {
-            width: 50%;
+            width: 70%;
+
             &_tech {
+                animation: slide 20s infinite linear;
                 gap: 0.3em;
                 align-self: flex-end;
             }
