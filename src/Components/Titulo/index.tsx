@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Titulo.module.scss'
+import { useSelector } from 'react-redux'
 
 export default function Titulo({tituloString}: {tituloString:string}) {
 
@@ -18,13 +19,16 @@ export default function Titulo({tituloString}: {tituloString:string}) {
     }
 
     const [titulo, setTitulo] = useState('')
-
+    const linguagem = useSelector((state: any) => state.linguagem)
+    
     useEffect(() => {
 
         const textoTitulo = tituloString
 
+        setTitulo('')
         digitando(textoTitulo, 75, setTitulo)
-    }, [])
+    }, [linguagem])
+    
 
   return (
     <div className={styles.container}>

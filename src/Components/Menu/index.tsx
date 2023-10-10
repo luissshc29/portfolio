@@ -1,7 +1,10 @@
 import React from 'react'
 import { AiOutlineLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
 import styles from './Menu.module.scss'
-import classNames from 'classnames'
+import { ImLoop2 } from 'react-icons/im'
+import { useDispatch, useSelector } from 'react-redux'
+import { mudaLinguagem } from 'store/reducers/linguagem'
+import classnames from 'classnames'
 
 export default function Menu() {
 
@@ -26,6 +29,9 @@ export default function Menu() {
         },
     ]
 
+    const linguagem: string = useSelector((state: any) => state.linguagem)
+    const dispatch = useDispatch()
+
   return (
     <div className={styles.menu}>
         <img src='/images/instagram-pic.jpg' alt='Avatar' className={styles.menu_imagem}/>
@@ -37,6 +43,13 @@ export default function Menu() {
                     <p className={styles.menu_links_link_texto}>{item.texto}</p>
                 </a>
             ))}
+        </div>
+        <div className={styles.switch}>
+            <p className={classnames(styles.switch_texto, {[styles.switch_texto_ativo]: linguagem === 'PT'})} onClick={() => dispatch(mudaLinguagem('PT'))}>PT-BR</p>
+            <div className={linguagem === 'PT' ? styles.switch_pt : styles.switch_us}>   
+                <ImLoop2/>
+            </div>
+            <p className={classnames(styles.switch_texto, {[styles.switch_texto_ativo]: linguagem === 'US'})} onClick={() => dispatch(mudaLinguagem('US'))}>EN-US</p>
         </div>
     </div>
   )

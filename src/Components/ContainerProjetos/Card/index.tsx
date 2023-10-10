@@ -3,8 +3,12 @@ import React from 'react'
 import styles from './Card.module.scss'
 import { AiOutlineLink } from 'react-icons/ai'
 import { PiBookBookmarkThin } from 'react-icons/pi'
+import { useSelector } from 'react-redux'
 
 export default function Card({item}: {item: ProjetoType}) {
+
+    const linguagem = useSelector((state: any) => state.linguagem)
+    
     return (
         <div className={styles.card}>
             <img src={item.imagem} alt={item.nome} className={styles.card_imagem}/>
@@ -15,7 +19,7 @@ export default function Card({item}: {item: ProjetoType}) {
             </div>
             <h1 className={styles.card_titulo}>{item.nome}</h1>
             <a className={styles.card_link} href={item.site}><span>Link</span><AiOutlineLink/></a>
-            <a className={styles.card_link} href={item.repositorio}><span>Repositório</span><PiBookBookmarkThin/></a>
+            <a className={styles.card_link} href={item.repositorio}><span>{linguagem === 'PT' ? 'Repositório' : 'Repository'}</span><PiBookBookmarkThin/></a>
         </div>
     )
 }

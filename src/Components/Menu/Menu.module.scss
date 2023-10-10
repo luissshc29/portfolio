@@ -74,6 +74,65 @@
         
         }
     }
+
+    .switch {
+        width: fit-content;
+        text-align: center;
+        color: white;
+        font-family: $fonte-menu;
+        font-weight: 500;
+        font-size: 0.9em;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        border-radius: 30px;
+        padding: 0.5em 0;
+        margin: 3em 1em;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-image: linear-gradient(90deg, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 81%) 1;
+            border-width: 1px;
+            border-style: solid;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0px 0px 6px 0px $sombra-github, 0px 0px 12px 0px $sombra-github inset;
+        }
+
+        &_texto, &_texto_ativo {
+            transition: 300ms;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &_texto_ativo {
+            font-weight: 600;
+            transition: 300ms;
+            scale: 1.2;
+            transform: translateY(-5px);
+            text-decoration: underline;
+        }
+
+        svg {
+            font-size: 1.5em;
+        }
+
+        &_pt {
+            transition: all 1000ms;
+            transform: rotateZ(360deg);
+        }
+
+        &_us {
+            transition: all 1000ms;
+            transform: rotateZ(-360deg);
+        }
+
+    }
 }
 
 @media screen and (min-width: calc($min-width-desktop + 1px)) {
@@ -114,6 +173,7 @@
                 }
             }
         }
+
     }
 }
 
@@ -125,7 +185,7 @@
         justify-items: center;
         width: 100vw;
         height: 40%;
-        padding: 3em 2em;
+        padding: 3em 2em 0 2em;
 
         &_imagem {
             width: 70%;
@@ -153,6 +213,12 @@
                 }
             }
         }
+
+        .switch {
+            grid-column: 2;
+            justify-self: flex-end;
+            scale: 0.9;
+        }
     }
 }
 
@@ -164,7 +230,7 @@
         justify-items: center;
         width: 100vw;
         height: 40%;
-        padding: 2em 1em;
+        padding: 2em 1em 0 1em;
 
         &_imagem {
             width: 90%;
@@ -193,6 +259,11 @@
                     
                 }
             }
+        }
+
+        .switch {
+            grid-column: 2;
+            scale: 0.8;
         }
     }
 }

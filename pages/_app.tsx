@@ -3,6 +3,8 @@ import Rodape from 'Components/Rodape'
 import GlobalStyles from 'Styles/GlobalStyles'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux'
+import store from 'store/store'
 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -31,8 +33,10 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <GlobalStyles />
-            <Menu />
-            <Component {...pageProps} />
+            <Provider store={store}>
+                <Menu />
+                <Component {...pageProps} />
+            </Provider>
             <Rodape />
         </>
 

@@ -2,6 +2,7 @@ import { AiFillHtml5 } from 'react-icons/ai'
 import { BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoTypescript } from 'react-icons/bi'
 import { FaSass } from 'react-icons/fa'
 import { SiNextdotjs, SiRecoil } from 'react-icons/si'
+import { TbBrandRedux } from 'react-icons/tb'
 
 export interface ProjetoType {
     id: number,
