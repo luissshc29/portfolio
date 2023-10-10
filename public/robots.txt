@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /projetos
+Allow: /contatos
