@@ -16,7 +16,7 @@ export default function Contatos() {
 
     function copy (texto: string) {
         navigator.clipboard.writeText(texto)
-        alert('Texto copiado para a área de transferência!')
+        alert(linguagem === 'PT' ? 'Texto copiado para a área de transferência!' : 'Text copied to clipboard!')
     }
 
   return (
