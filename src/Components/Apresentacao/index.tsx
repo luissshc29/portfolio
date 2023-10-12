@@ -82,7 +82,7 @@ export default function Apresentacao() {
             {
             
                 tecnologias.map(item => (
-                    <div key={item.id} className={styles.container_div_tech_item}>
+                    <div key={item?.id} className={styles.container_div_tech_item}>
                         {item.component}
                         <p>{item.nome}</p>
                     </div>

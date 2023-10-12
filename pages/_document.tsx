@@ -2,8 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
     return (
-        <Html>
-            <html lang="pt-Br"></html>
+        <Html lang="pt-Br">
             <Head>
                 <link rel='shortcut icon' href='/shortcut-icon.png' />
             </Head>
