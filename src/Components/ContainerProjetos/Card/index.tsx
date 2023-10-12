@@ -18,8 +18,8 @@ export default function Card({item}: {item: ProjetoType}) {
                 ))}
             </div>
             <h1 className={styles.card_titulo}>{item.nome}</h1>
-            <a className={styles.card_link} href={item.site}><span>Link</span><AiOutlineLink/></a>
-            <a className={styles.card_link} href={item.repositorio}><span>{linguagem === 'PT' ? 'Repositório' : 'Repository'}</span><PiBookBookmarkThin/></a>
+            <a target='_blank' className={styles.card_link} href={item.site}><span>Link</span><AiOutlineLink/></a>
+            <a target='_blank' className={styles.card_link} href={item.repositorio}><span>{linguagem === 'PT' ? 'Repositório' : 'Repository'}</span><PiBookBookmarkThin/></a>
         </div>
     )
 }

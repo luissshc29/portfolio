@@ -38,7 +38,7 @@ export default function Menu() {
         <div className={styles.menu_links}>
 
             {social.map(item => (
-                <a key={item.id} href={item.link} className={`${styles.menu_links_link} ${styles[`${item.texto.toLowerCase()}`]}`}>
+                <a target='_blank' key={item.id} href={item.link} className={`${styles.menu_links_link} ${styles[`${item.texto.toLowerCase()}`]}`}>
                     {item.componente}
                     <p className={styles.menu_links_link_texto}>{item.texto}</p>
                 </a>
