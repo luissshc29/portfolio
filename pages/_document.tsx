@@ -6,7 +6,6 @@ export default function Document() {
             <html lang="pt-Br"></html>
             <Head>
                 <link rel='shortcut icon' href='/shortcut-icon.png' />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <body>
                 <Main />
