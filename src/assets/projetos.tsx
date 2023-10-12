@@ -16,30 +16,19 @@ export interface ProjetoType {
 const projetos:ProjetoType[] = [
     {
         id: 1,
-        nome: 'Movie Finder',
-        imagem: '/images/projetos/movie-finder.png',
+        nome: 'Pokédex',
+        imagem: '/images/projetos/pokedex.png',
         tecnologias: [
-            <AiFillHtml5 color='#fc6203'/>,
-            <BiLogoCss3 color='#0349fc'/>,
-            <BiLogoJavascript color='#fcd303'/>
+            <FaSass color='#fc03c6'/>,
+            <BiLogoReact color='#03f2ff'/>,
+            <BiLogoTypescript color='#4466fc'/>,
+            <SiNextdotjs color='#ffffff'/>
         ],
-        site: 'https://movie-finder-psi-lyart.vercel.app/',
-        repositorio: 'https://github.com/luissshc29/Movie-Finder'
+        site: 'https://pokedex-luissshc29.vercel.app/',
+        repositorio: 'https://github.com/luissshc29/pokedex'
     },
     {
         id: 2,
-        nome: 'Jogo da Velha',
-        imagem: '/images/projetos/jogo-da-velha.png',
-        tecnologias: [
-            <AiFillHtml5 color='#fc6203'/>,
-            <BiLogoCss3 color='#0349fc'/>,
-            <BiLogoJavascript color='#fcd303'/>
-        ],
-        site: 'https://jogo-da-velha-five-beta.vercel.app/',
-        repositorio: 'https://github.com/luissshc29/jogo-da-velha'
-    },
-    {
-        id: 3,
         nome: 'React Supplements',
         imagem: '/images/projetos/react-supplements.png',
         tecnologias: [
@@ -49,6 +38,17 @@ const projetos:ProjetoType[] = [
         ],
         site: 'https://react-supplements.vercel.app/',
         repositorio: 'https://github.com/luissshc29/react-supplements'
+    },
+    {
+        id: 3,
+        nome: 'Página de Login',
+        imagem: '/images/projetos/login.png',
+        tecnologias: [
+            <BiLogoReact color='#03f2ff'/>,
+            <SiNextdotjs color='#ffffff'/>
+        ],
+        site: 'https://pagina-de-login-amber.vercel.app/',
+        repositorio: 'https://github.com/luissshc29/pagina-de-login'
     },
     {
         id: 4,
@@ -65,6 +65,30 @@ const projetos:ProjetoType[] = [
     },
     {
         id: 5,
+        nome: 'Movie Finder',
+        imagem: '/images/projetos/movie-finder.png',
+        tecnologias: [
+            <AiFillHtml5 color='#fc6203'/>,
+            <BiLogoCss3 color='#0349fc'/>,
+            <BiLogoJavascript color='#fcd303'/>
+        ],
+        site: 'https://movie-finder-psi-lyart.vercel.app/',
+        repositorio: 'https://github.com/luissshc29/Movie-Finder'
+    },
+    {
+        id: 6,
+        nome: 'Jogo da Velha',
+        imagem: '/images/projetos/jogo-da-velha.png',
+        tecnologias: [
+            <AiFillHtml5 color='#fc6203'/>,
+            <BiLogoCss3 color='#0349fc'/>,
+            <BiLogoJavascript color='#fcd303'/>
+        ],
+        site: 'https://jogo-da-velha-five-beta.vercel.app/',
+        repositorio: 'https://github.com/luissshc29/jogo-da-velha'
+    },
+    {
+        id: 7,
         nome: 'Cinetag',
         imagem: '/images/projetos/cinetag.png',
         tecnologias: [
@@ -74,30 +98,6 @@ const projetos:ProjetoType[] = [
         ],
         site: 'https://cinetag-sage-alpha.vercel.app/',
         repositorio: 'https://github.com/luissshc29/cinetag'
-    },
-    {
-        id: 6,
-        nome: 'Página de Login',
-        imagem: '/images/projetos/login.png',
-        tecnologias: [
-            <BiLogoReact color='#03f2ff'/>,
-            <SiNextdotjs color='#ffffff'/>
-        ],
-        site: 'https://pagina-de-login-amber.vercel.app/',
-        repositorio: 'https://github.com/luissshc29/pagina-de-login'
-    },
-    {
-        id: 7,
-        nome: 'Pokédex',
-        imagem: '/images/projetos/pokedex.png',
-        tecnologias: [
-            <FaSass color='#fc03c6'/>,
-            <BiLogoReact color='#03f2ff'/>,
-            <BiLogoTypescript color='#4466fc'/>,
-            <SiNextdotjs color='#ffffff'/>
-        ],
-        site: 'https://pokedex-luissshc29.vercel.app/',
-        repositorio: 'https://github.com/luissshc29/pokedex'
     },
 ]
 
