@@ -20,7 +20,7 @@
     align-items: flex-start;
     padding: 2em 1em;
     font-family: $fonte-menu;
-    font-display: swap;
+     
 
     &_imagem {
         width: 90%;
@@ -80,8 +80,7 @@
         width: fit-content;
         text-align: center;
         color: white;
-        font-family: $fonte-menu;
-        font-display: swap;
+        font-family: $fonte-menu; 
         font-weight: 500;
         font-size: 0.9em;
         display: flex;
