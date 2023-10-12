@@ -5,6 +5,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import store from 'store/store'
+import { Analytics } from '@vercel/analytics/react' 
 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Component {...pageProps} />
             </Provider>
             <Rodape />
+            <Analytics/>
         </>
 
     )
