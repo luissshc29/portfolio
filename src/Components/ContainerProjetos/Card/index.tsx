@@ -8,10 +8,10 @@ import { useSelector } from 'react-redux'
 export default function Card({item}: {item: ProjetoType}) {
 
     const linguagem = useSelector((state: any) => state.linguagem)
-    
+
     return (
         <div className={styles.card}>
-            <img src={item.imagem} alt={item.nome} className={styles.card_imagem}/>
+            <img src={item.imagem} alt={item.nome} className={styles.card_imagem} loading={item.id <= 2 ? 'eager' : 'lazy'}/>
             <div className={styles.card_tech}>
                 {item.tecnologias.map((tec, index) => (
                     <div key={index} className={styles.card_tech_item}>{tec}</div>

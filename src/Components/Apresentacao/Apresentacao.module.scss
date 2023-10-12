@@ -44,6 +44,7 @@
         animation: show-up 1s;
         color: white;
         font-family: $fonte-menu;
+        font-display: swap;
         font-size: 1em;
         line-height: 1.5em;
         align-self: flex-start;
@@ -89,6 +90,7 @@
             animation: show-up 2s;
             animation: slide 25s infinite linear;
             font-family: $fonte-menu;
+            font-display: swap;
             display: flex;
             justify-content: center;
             align-self: flex-end;
