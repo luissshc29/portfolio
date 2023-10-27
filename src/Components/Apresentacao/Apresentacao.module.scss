@@ -29,9 +29,9 @@
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 25% 15% 30% 20%;
-    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -44,7 +44,6 @@
         animation: show-up 1s;
         color: white;
         font-family: $fonte-menu;
-         
         font-size: 1em;
         line-height: 1.5em;
         align-self: flex-start;
@@ -152,7 +151,6 @@
 
 @media screen and (min-width: $min-width-tablet) and (max-width: $min-width-desktop) {
     .container {
-        grid-template-rows: 20% auto auto auto;
         width: 90vw;
         min-height: 100vh;
         margin: 2em auto;
@@ -175,8 +173,7 @@
         width: 95vw;
         height: 75vh;
         margin: 0 auto;
-        grid-template-rows: 20% auto auto auto;
-        align-items: flex-start;
+        justify-items: center;
 
         &_titulo {
             font-size: 1.4em;
