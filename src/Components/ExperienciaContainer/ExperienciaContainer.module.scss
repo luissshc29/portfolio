@@ -1,0 +1,74 @@
+@import 'Styles/variaveis';
+
+.container {
+    width: 100%;
+    font-family: $fonte-menu;
+    
+    &_experiencias {
+        margin: 2em 0;
+        min-height: 70%;
+        display: flex;
+        flex-direction: column;
+        
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+
+            svg {
+                font-size: 4em;
+            }
+
+            &_detalhes {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8em;
+
+                &_titulo {
+                font-size: 1.5em;
+                font-weight: 600;
+                
+                }
+                
+                &_desc {
+                    line-height: 1.2em;
+                }
+            
+                &_data {
+                    font-weight: 600;
+                }
+
+            }
+            
+
+        }
+
+        
+    }
+    
+}
+
+@media screen and (min-width: $min-width-desktop){
+
+
+
+}
+
+@media screen and (min-width: $min-width-tablet) and (max-width: $min-width-desktop){
+
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: $min-width-tablet){
+
+    .container {
+        min-height: 60vh;
+        width: 100vw;
+
+    }
+
+}

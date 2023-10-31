@@ -1,0 +1,105 @@
+@import 'Styles/variaveis';
+
+.experiencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    &_icone {
+        font-size: 2.5em;
+        height: 5em;
+        display: flex;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            height: 100%;
+            border-image: $text-gradient 1;
+            border-width: 2px;
+            border-style: solid;
+            z-index: -1;
+        }
+
+        svg {
+            height: fit-content;
+            margin: auto 0;
+            background-color: $cinza-fundo;
+            height: 1.5em;
+        }
+
+    }
+
+    &_detalhes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        width: fit-content;
+
+        &_titulo {
+            font-size: 1.5em;
+            font-weight: 600;
+        
+        }
+        
+        &_desc {
+            line-height: 1.3em;
+        }
+    
+        &_data {
+            font-weight: 600;
+        }
+
+    }
+    
+}
+
+    
+@media screen and (min-width: $min-width-desktop){
+
+
+
+}
+
+@media screen and (min-width: $min-width-tablet) and (max-width: $min-width-desktop){
+
+
+}
+
+@media screen and (max-width: $min-width-tablet){
+
+    .experiencia {
+        gap: 0.5em;
+
+        &_icone {
+            height: 4em;
+            
+            svg {
+                font-size: 0.7em;
+            }
+        
+        }
+    
+        &_detalhes {
+            scale: 0.9;
+    
+            &_titulo {
+                font-size: 1em;
+            }
+            
+            &_desc {
+                line-height: 1.2em;
+                font-size: 0.8em;
+            }
+        
+            &_data {
+                font-size: 0.8em;
+            }
+    
+        }
+        
+    }
+    
+}

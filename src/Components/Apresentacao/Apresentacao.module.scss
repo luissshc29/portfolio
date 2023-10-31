@@ -31,13 +31,10 @@
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.8em;
-    justify-content: center;
     text-align: center;
     align-items: center;
-    width: 80%;
-    height: 90vh;
-    margin: 0 0 2em auto;
     overflow-x: hidden;
     
     &_descricao {
@@ -57,7 +54,6 @@
 
     &_div {
         width: 35%;
-        height: 100%;
         display: flex;
         position: relative;
         margin: 0 auto;
@@ -127,7 +123,7 @@
 
 @media screen and (min-width: $min-width-desktop) {
     .container {
-        margin-bottom: 0;
+        margin: auto 0;
     
         &_div {
 
@@ -170,10 +166,6 @@
 
 @media screen and (max-width: $min-width-tablet) {
     .container {
-        width: 95vw;
-        height: 75vh;
-        margin: 0 auto;
-        justify-items: center;
 
         &_titulo {
             font-size: 1.4em;

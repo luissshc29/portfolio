@@ -111,8 +111,8 @@ export default function Apresentacao() {
                 <p>{linguagem === "PT" ? "Currículo" : "Resume"}</p>
                 <FaDownload />
             </Botao>
-            <BotaoNav avancar location="/projetos">
-                {linguagem === "PT" ? "Ir para projetos" : "See projects"}
+            <BotaoNav avancar location="/experiencia">
+                {linguagem === "PT" ? "Ver experiência" : "See work experience"}
             </BotaoNav>
         </div>
     );
