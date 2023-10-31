@@ -17,7 +17,7 @@ const experiencias: ExperienciaType[] = [
     {
         id: 1,
         tituloBR: "Desenvolvedor Freelancer",
-        tituloUS: "Freelancer Developer",
+        tituloUS: "Freelance Developer",
         dataInicioBR: "Out 2023",
         dataInicioUS: "Oct 2023",
         dataFimBR: "Hoje",
