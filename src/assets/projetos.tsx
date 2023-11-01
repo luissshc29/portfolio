@@ -1,123 +1,145 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import {
-  BiLogoCss3,
-  BiLogoJavascript,
-  BiLogoReact,
-  BiLogoTypescript,
+    BiLogoCss3,
+    BiLogoJavascript,
+    BiLogoReact,
+    BiLogoTypescript,
 } from "react-icons/bi";
 import { FaSass } from "react-icons/fa";
 import { SiNextdotjs, SiRecoil } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
+import { v4 as uuidv4 } from "uuid";
 
 export interface ProjetoType {
-  id: number;
-  nome: string;
-  imagem: string;
-  tecnologias: JSX.Element[];
-  site: string;
-  repositorio: string;
+    id: string;
+    nomeBR: string;
+    nomeUS: string;
+    imagem: string;
+    tecnologias: JSX.Element[];
+    site: string;
+    repositorio?: string;
 }
 
 const projetos: ProjetoType[] = [
-  {
-    id: 1,
-    nome: "Pokédex",
-    imagem: "/images/projetos/pokedex.png",
-    tecnologias: [
-      <FaSass color="#fc03c6" />,
-      <BiLogoReact color="#03f2ff" />,
-      <BiLogoTypescript color="#4466fc" />,
-      <SiNextdotjs color="#ffffff" />,
-    ],
-    site: "https://pokedex-luissshc29.vercel.app/",
-    repositorio: "https://github.com/luissshc29/pokedex",
-  },
-  {
-    id: 2,
-    nome: "Notepad",
-    imagem: "/images/projetos/notepad.png",
-    tecnologias: [
-      <SiTailwindcss color="#00c8ff" />,
-      <BiLogoTypescript color="#4466fc" />,
-      <TbBrandRedux color="#9d03fc" />,
-      <SiNextdotjs color="#ffffff" />,
-    ],
-    site: "https://notepad-luissshc29.vercel.app/",
-    repositorio: "https://github.com/luissshc29/Notepad",
-  },
-  {
-    id: 3,
-    nome: "React Supplements",
-    imagem: "/images/projetos/react-supplements.png",
-    tecnologias: [
-      <FaSass color="#fc03c6" />,
-      <BiLogoTypescript color="#4466fc" />,
-      <BiLogoReact color="#03f2ff" />,
-    ],
-    site: "https://react-supplements.vercel.app/",
-    repositorio: "https://github.com/luissshc29/react-supplements",
-  },
-  {
-    id: 4,
-    nome: "Página de Login Simples",
-    imagem: "/images/projetos/login.png",
-    tecnologias: [
-      <BiLogoReact color="#03f2ff" />,
-      <SiNextdotjs color="#ffffff" />,
-    ],
-    site: "https://pagina-de-login-amber.vercel.app/",
-    repositorio: "https://github.com/luissshc29/pagina-de-login",
-  },
-  {
-    id: 5,
-    nome: "Sorteador de Amigo Secreto",
-    imagem: "/images/projetos/amigo-secreto.png",
-    tecnologias: [
-      <FaSass color="#fc03c6" />,
-      <BiLogoTypescript color="#4466fc" />,
-      <BiLogoReact color="#03f2ff" />,
-      <SiRecoil color="#ffffff" />,
-    ],
-    site: "https://sorteador-amigo-secreto-ochre.vercel.app/",
-    repositorio: "https://github.com/luissshc29/sorteador-amigo-secreto",
-  },
-  {
-    id: 6,
-    nome: "Movie Finder",
-    imagem: "/images/projetos/movie-finder.png",
-    tecnologias: [
-      <AiFillHtml5 color="#fc6203" />,
-      <BiLogoCss3 color="#0349fc" />,
-      <BiLogoJavascript color="#fcd303" />,
-    ],
-    site: "https://movie-finder-psi-lyart.vercel.app/",
-    repositorio: "https://github.com/luissshc29/Movie-Finder",
-  },
-  {
-    id: 7,
-    nome: "Jogo da Velha",
-    imagem: "/images/projetos/jogo-da-velha.png",
-    tecnologias: [
-      <AiFillHtml5 color="#fc6203" />,
-      <BiLogoCss3 color="#0349fc" />,
-      <BiLogoJavascript color="#fcd303" />,
-    ],
-    site: "https://jogo-da-velha-five-beta.vercel.app/",
-    repositorio: "https://github.com/luissshc29/jogo-da-velha",
-  },
-  {
-    id: 8,
-    nome: "Cinetag",
-    imagem: "/images/projetos/cinetag.png",
-    tecnologias: [
-      <BiLogoCss3 color="#0349fc" />,
-      <BiLogoJavascript color="#fcd303" />,
-      <BiLogoReact color="#03f2ff" />,
-    ],
-    site: "https://cinetag-sage-alpha.vercel.app/",
-    repositorio: "https://github.com/luissshc29/cinetag",
-  },
+    {
+        id: uuidv4(),
+        nomeBR: "Catálogo Unicapas®",
+        nomeUS: "Unicapas® catalog",
+        imagem: "/images/projetos/unicapas.png",
+        tecnologias: [
+            <SiTailwindcss color="#00c8ff" />,
+            <BiLogoReact color="#03f2ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+        ],
+        site: "https://unicapas.com.br",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Pokédex",
+        nomeUS: "Pokédex",
+        imagem: "/images/projetos/pokedex.png",
+        tecnologias: [
+            <FaSass color="#fc03c6" />,
+            <BiLogoReact color="#03f2ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <SiNextdotjs color="#ffffff" size={18} />,
+        ],
+        site: "https://pokedex-luissshc29.vercel.app/",
+        repositorio: "https://github.com/luissshc29/pokedex",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Bloco de notas online",
+        nomeUS: "Online notepad",
+        imagem: "/images/projetos/notepad.png",
+        tecnologias: [
+            <SiTailwindcss color="#00c8ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <TbBrandRedux color="#9d03fc" />,
+            <SiNextdotjs color="#ffffff" size={18} />,
+        ],
+        site: "https://notepad-luissshc29.vercel.app/",
+        repositorio: "https://github.com/luissshc29/Notepad",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "React Supplements",
+        nomeUS: "React Supplements",
+        imagem: "/images/projetos/react-supplements.png",
+        tecnologias: [
+            <FaSass color="#fc03c6" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <BiLogoReact color="#03f2ff" />,
+        ],
+        site: "https://react-supplements.vercel.app/",
+        repositorio: "https://github.com/luissshc29/react-supplements",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Página de login simples",
+        nomeUS: "Simple login page",
+        imagem: "/images/projetos/login.png",
+        tecnologias: [
+            <BiLogoReact color="#03f2ff" />,
+            <SiNextdotjs color="#ffffff" size={18} />,
+        ],
+        site: "https://pagina-de-login-amber.vercel.app/",
+        repositorio: "https://github.com/luissshc29/pagina-de-login",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Sorteador de Amigo Secreto",
+        nomeUS: "Secret Santa drawer",
+        imagem: "/images/projetos/amigo-secreto.png",
+        tecnologias: [
+            <FaSass color="#fc03c6" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <BiLogoReact color="#03f2ff" />,
+            <SiRecoil color="#ffffff" />,
+        ],
+        site: "https://sorteador-amigo-secreto-ochre.vercel.app/",
+        repositorio: "https://github.com/luissshc29/sorteador-amigo-secreto",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Buscador de filmes",
+        nomeUS: "Movie finder",
+        imagem: "/images/projetos/movie-finder.png",
+        tecnologias: [
+            <AiFillHtml5 color="#fc6203" />,
+            <BiLogoCss3 color="#0349fc" />,
+            <BiLogoJavascript color="#fcd303" />,
+        ],
+        site: "https://movie-finder-psi-lyart.vercel.app/",
+        repositorio: "https://github.com/luissshc29/Movie-Finder",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Jogo da Velha",
+        nomeUS: "Hash",
+        imagem: "/images/projetos/jogo-da-velha.png",
+        tecnologias: [
+            <AiFillHtml5 color="#fc6203" />,
+            <BiLogoCss3 color="#0349fc" />,
+            <BiLogoJavascript color="#fcd303" />,
+        ],
+        site: "https://jogo-da-velha-five-beta.vercel.app/",
+        repositorio: "https://github.com/luissshc29/jogo-da-velha",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Cinetag",
+        nomeUS: "Cinetag",
+        imagem: "/images/projetos/cinetag.png",
+        tecnologias: [
+            <BiLogoCss3 color="#0349fc" />,
+            <BiLogoJavascript color="#fcd303" />,
+            <BiLogoReact color="#03f2ff" />,
+        ],
+        site: "https://cinetag-sage-alpha.vercel.app/",
+        repositorio: "https://github.com/luissshc29/cinetag",
+    },
 ];
 
 export default projetos;

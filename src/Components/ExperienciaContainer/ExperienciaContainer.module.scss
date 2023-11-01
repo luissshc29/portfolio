@@ -1,6 +1,7 @@
 @import 'Styles/variaveis';
 
 .container {
+    animation: $showUp;
     width: 100%;
     font-family: $fonte-menu;
     

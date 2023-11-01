@@ -35,3 +35,21 @@ $sombra-clara: rgba(0, 0, 0, 0.185);
 $sombra-ciano: rgba(0,217,255,1);
 $sombra-linkedin:rgb(14, 68, 168);
 $sombra-github:#f5f5f5;
+
+//Animations
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+$showUp: show-up 1s;

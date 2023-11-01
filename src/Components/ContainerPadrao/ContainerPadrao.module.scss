@@ -1,22 +1,6 @@
 @import 'Styles/variaveis';
 
-@keyframes show-up {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
 .container {
-    animation: show-up 1s;
     min-height: 90vh;
     width: 80vw;
     color: white;

@@ -66,7 +66,7 @@ export default function Apresentacao() {
         {
             id: 10,
             nome: "Next.js",
-            component: <SiNextdotjs color="#ffffff" />,
+            component: <SiNextdotjs color="#ffffff" size={20} />,
         },
         {
             id: 11,

@@ -1,19 +1,5 @@
 @import 'Styles/variaveis';
 
-@keyframes show-up {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes slide {
     0% {
         transform: translateX(55%);
@@ -29,6 +15,7 @@
 }
 
 .container {
+    animation: $showUp;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -38,7 +25,6 @@
     overflow-x: hidden;
     
     &_descricao {
-        animation: show-up 1s;
         color: white;
         font-family: $fonte-menu;
         font-size: 1em;
@@ -82,7 +68,7 @@
 
         &_tech {
             transition: 300ms;
-            animation: show-up 2s;
+            animation: $showUp;
             animation: slide 25s infinite linear;
             font-family: $fonte-menu;
             display: flex;
