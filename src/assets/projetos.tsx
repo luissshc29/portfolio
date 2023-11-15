@@ -24,7 +24,7 @@ export interface ProjetoType {
 const projetos: ProjetoType[] = [
     {
         id: uuidv4(),
-        nomeBR: "Catálogo Unicapas®",
+        nomeBR: "Catálogo Unicapas ®",
         nomeUS: "Unicapas® catalog",
         imagem: "/images/projetos/unicapas.png",
         tecnologias: [
@@ -61,6 +61,19 @@ const projetos: ProjetoType[] = [
         ],
         site: "https://notepad-luissshc29.vercel.app/",
         repositorio: "https://github.com/luissshc29/Notepad",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Countries Wiki",
+        nomeUS: "Countries Wiki",
+        imagem: "/images/projetos/countries-wiki.png",
+        tecnologias: [
+            <SiTailwindcss color="#00c8ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <SiNextdotjs color="#ffffff" />,
+        ],
+        site: "https://countries-wiki-tau.vercel.app/",
+        repositorio: "https://github.com/luissshc29/Countries-Wiki",
     },
     {
         id: uuidv4(),
