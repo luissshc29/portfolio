@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./Apresentacao.module.scss";
-import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
+import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandRedux } from "react-icons/tb";
 import {
     BiLogoCss3,
@@ -11,6 +11,7 @@ import {
 import { FaDownload, FaSass } from "react-icons/fa";
 import { SiNextdotjs, SiRecoil, SiTailwindcss } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
+import { GrMysql } from "react-icons/gr";
 import BotaoNav from "Components/BotaoNav";
 import Titulo from "Components/Titulo";
 import { useSelector } from "react-redux";
@@ -70,6 +71,11 @@ export default function Apresentacao() {
         },
         {
             id: 11,
+            nome: "MySQL",
+            component: <GrMysql color="#00c8ff" size={24} />,
+        },
+        {
+            id: 12,
             nome: "Git",
             component: <BsGit color="#fc6203" />,
         },

@@ -9,6 +9,7 @@ import { FaSass } from "react-icons/fa";
 import { SiNextdotjs, SiRecoil } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 import { v4 as uuidv4 } from "uuid";
 
 export interface ProjetoType {
@@ -33,6 +34,20 @@ const projetos: ProjetoType[] = [
             <BiLogoTypescript color="#4466fc" />,
         ],
         site: "https://unicapas.com.br",
+    },
+    {
+        id: uuidv4(),
+        nomeBR: "Página de login com OAuth",
+        nomeUS: "OAuth Login page",
+        imagem: "/images/projetos/auth-system.png",
+        tecnologias: [
+            <SiTailwindcss color="#00c8ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <SiNextdotjs color="#ffffff" />,
+            <GrMysql color="#00c8ff" size={24} />,
+        ],
+        site: "https://auth-system-iota.vercel.app/",
+        repositorio: "https://github.com/luissshc29/Auth-system",
     },
     {
         id: uuidv4(),
@@ -87,18 +102,6 @@ const projetos: ProjetoType[] = [
         ],
         site: "https://react-supplements.vercel.app/",
         repositorio: "https://github.com/luissshc29/react-supplements",
-    },
-    {
-        id: uuidv4(),
-        nomeBR: "Página de login simples",
-        nomeUS: "Simple login page",
-        imagem: "/images/projetos/login.png",
-        tecnologias: [
-            <BiLogoReact color="#03f2ff" />,
-            <SiNextdotjs color="#ffffff" />,
-        ],
-        site: "https://pagina-de-login-amber.vercel.app/",
-        repositorio: "https://github.com/luissshc29/pagina-de-login",
     },
     {
         id: uuidv4(),
