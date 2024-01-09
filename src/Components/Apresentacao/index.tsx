@@ -72,7 +72,7 @@ export default function Apresentacao() {
         {
             id: 11,
             nome: "MySQL",
-            component: <GrMysql color="#00c8ff" size={24} />,
+            component: <GrMysql color="#00c8ff" size={22} />,
         },
         {
             id: 12,
