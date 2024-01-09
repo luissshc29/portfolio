@@ -25,6 +25,20 @@ export interface ProjetoType {
 const projetos: ProjetoType[] = [
     {
         id: uuidv4(),
+        nomeBR: "Bike4Cash - Aluguel de bicicletas",
+        nomeUS: "Bike4Cash - Bike Rentals",
+        imagem: "/images/projetos/bike4cash.png",
+        tecnologias: [
+            <SiTailwindcss color="#00c8ff" />,
+            <BiLogoTypescript color="#4466fc" />,
+            <SiNextdotjs color="#ffffff" />,
+            <GrMysql color="#00c8ff" size={22} />,
+        ],
+        site: "https://bike4cash.vercel.app/",
+        repositorio: "https://github.com/luissshc29/bike4cash",
+    },
+    {
+        id: uuidv4(),
         nomeBR: "Catálogo Unicapas ®",
         nomeUS: "Unicapas® catalog",
         imagem: "/images/projetos/unicapas.png",
@@ -44,7 +58,7 @@ const projetos: ProjetoType[] = [
             <SiTailwindcss color="#00c8ff" />,
             <BiLogoTypescript color="#4466fc" />,
             <SiNextdotjs color="#ffffff" />,
-            <GrMysql color="#00c8ff" size={24} />,
+            <GrMysql color="#00c8ff" size={22} />,
         ],
         site: "https://auth-system-iota.vercel.app/",
         repositorio: "https://github.com/luissshc29/Auth-system",
