@@ -18,22 +18,6 @@ export default function ContainerProjetos() {
             {projetos.map((item) => (
                 <Card key={item.id} item={item} />
             ))}
-            <div
-                style={{
-                    display: "flex",
-                    width: "100%",
-                    justifyContent: "space-evenly",
-                }}
-            >
-                <BotaoNav voltar location="/experiencia">
-                    {linguagem === "PT"
-                        ? "Ver experiência"
-                        : "See work experience"}
-                </BotaoNav>
-                <BotaoNav avancar location="/contatos">
-                    {linguagem === "PT" ? "Ver contatos" : "See contact page"}
-                </BotaoNav>
-            </div>
         </div>
     );
 }

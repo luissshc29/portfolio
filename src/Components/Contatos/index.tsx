@@ -57,17 +57,6 @@ export default function Contatos() {
                     </div>
                 </div>
             </div>
-            <div
-                style={{
-                    display: "flex",
-                    width: "100%",
-                    justifyContent: "space-evenly",
-                }}
-            >
-                <BotaoNav voltar location="/projetos">
-                    {linguagem === "PT" ? "Ver projetos" : "See projects"}
-                </BotaoNav>
-            </div>
         </div>
     );
 }

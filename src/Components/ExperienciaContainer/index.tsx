@@ -21,23 +21,6 @@ export default function ExperienciaContainer() {
                     <Experiencia key={item.id} item={item} />
                 ))}
             </div>
-
-            <div
-                style={{
-                    display: "flex",
-                    width: "100%",
-                    justifyContent: "space-evenly",
-                }}
-            >
-                <BotaoNav voltar location="/">
-                    {linguagem === "PT"
-                        ? "Ver página inicial"
-                        : "See home page"}
-                </BotaoNav>
-                <BotaoNav avancar location="/projetos">
-                    {linguagem === "PT" ? "Ver projetos" : "See projects"}
-                </BotaoNav>
-            </div>
         </div>
     );
 }
